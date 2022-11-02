@@ -8,20 +8,20 @@
 
 ### Search Engine
 
-### The user can get food suggestion by searching one ingredient.
+#### The user can get food suggestion by searching one ingredient.
 
-### The user can get recipe by clicking on the picture.
+#### The user can get recipe by clicking on the picture.
 
 ## Should have
 
-### Ingredients
+#### Ingredients
 
-### Nice styling
+#### Nice styling
 
 ## Could Have
 
-### The User can see her past searches in the dropdown menu
+#### The User can see her past searches in the dropdown menu
 
-### The User can delete the past if she/he wants
+#### The User can delete the past if she/he wants
 
-### Popular food recipe
+#### Popular food recipe
