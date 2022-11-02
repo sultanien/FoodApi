@@ -12,9 +12,11 @@
 
 #### The user can get recipe by clicking on the picture.
 
+#### The user can go to video by clicking button
+
 ## Should have
 
-#### Ingredients
+#### The user can reach ingredients by clicking button.
 
 #### Nice styling
 
