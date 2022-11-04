@@ -6,7 +6,7 @@
 
 ## Must Have
 
-### Search Engine
+#### Search Engine
 
 #### The user can get food suggestion by searching one ingredient.
 
