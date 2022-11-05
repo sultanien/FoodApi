@@ -215,10 +215,16 @@ body{
 .recipe-instruct{
     padding: 1rem 0;
 }
+.recipe-instruct p{
+    text-align: justify;
+}
 
+.recipe-meal-img {
+    margin-bottom: 2rem;
+}
 .recipe-meal-img img{
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 12.25rem;
+    height: 12.25rem;
     border-radius: 50%;
     margin: 0 auto;
     display: block;
