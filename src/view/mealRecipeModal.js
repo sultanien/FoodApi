@@ -19,5 +19,5 @@ export const mealRecipeModal = (meal) => {
         </div>
     `;
     mealDetailsContent.innerHTML = html;
-    mealDetailsContent.parentElement.classList.add('showRecipe')
+    mealDetailsContent.parentElement.classList.add('showRecipe');
 }
