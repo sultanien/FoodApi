@@ -2,7 +2,6 @@
 
 import { getMealList} from "./page/getMealList.js";
 import { getMealRecipe } from "./page/getMealRecipe.js";
-import { backCard } from "./view/generateIngredients.js";
 
 
 const searchBtn =  document.getElementById('search-btn');

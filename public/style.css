@@ -113,10 +113,60 @@ body{
     width: 100%;
 }
 
+.container{
+    width: 100%;
+    height: 50vh;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+.card .back {
+    background-color: var(--tawny);
+    color: var(--main);
+    transform: rotateY(180deg);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .back ul{
+    columns: 2;
+    list-style-position: inside;
+    text-align: left;
+}
+.card .back ul li{
+    margin: 10px;
+    padding: 0px;
+}
+
+.meal-img {
+    width: 100%;
+}
 .meal-img img{
     width: 100%;
-    display: block;
-
+    height: 100%;
 }
 
 .meal-name{
@@ -274,3 +324,21 @@ body{
         grid-template-columns:repeat(3,1fr);
     }
 } 
+
+@media screen and (max-width: 600px) {
+    .card .back {
+        padding:0;
+        padding-left:0.5rem;
+    }
+    .card .back ul{
+        list-style-type: none;
+        column-rule-style: solid;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .card .back ul li{
+        margin: 0px;
+        padding: 0px;
+    }
+}
