@@ -5,9 +5,11 @@ import { getBackCard } from "../page/getIngredientsList.js";
 
 const mealResult = document.querySelector('.meal-result h2');
 mealResult.classList.add('hide')
+
 const mealList = document.getElementById('meal');
 
 const loadMoreBtn = document.getElementById('load-more-btn');
+
 
 export const generateMealList = (data) => {
     let html = '';
@@ -60,4 +62,10 @@ export const generateMealList = (data) => {
 
         mealCard.addEventListener('mouseover', backCardHandler);
     });
+    const mealItemsIncrease = 3;
+    const mealItemsCount = mealItems.length;
+    let currentPage = 1;
+    const pageCount = Math.ceil(mealItemsCount/mealItemsIncrease);
+
+    console.log(mealItemsCount)
 }

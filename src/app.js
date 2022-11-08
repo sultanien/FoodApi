@@ -20,8 +20,8 @@ recipeCloseBtn.addEventListener('click', () => {
 });
 
 const loadApp = () => {
+    getMealList();
     updateQuote();
-    console.log(updateQuote())
   };
   
 window.addEventListener('load', loadApp);
