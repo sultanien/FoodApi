@@ -8,9 +8,6 @@ mealResult.classList.add('hide')
 
 const mealList = document.getElementById('meal');
 
-const loadMoreBtn = document.getElementById('load-more-btn');
-
-
 export const generateMealList = (data) => {
     let html = '';
     let lengthData = Object.values(data)[0].length
