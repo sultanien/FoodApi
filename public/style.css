@@ -32,8 +32,10 @@ body{
 }
 
 .title{
-    font-size: 2rem;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 4rem;
     margin-bottom: 2rem;
+    color: var(--tawny);
 }
 
 
