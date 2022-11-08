@@ -3,8 +3,11 @@
 
 import { getBackCard } from "../page/getIngredientsList.js";
 
-
+const mealResult = document.querySelector('.meal-result h2');
+mealResult.classList.add('hide')
 const mealList = document.getElementById('meal');
+
+const loadMoreBtn = document.getElementById('load-more-btn');
 
 export const generateMealList = (data) => {
     let html = '';
@@ -28,6 +31,7 @@ export const generateMealList = (data) => {
             </div>
             `
         });
+        mealResult.classList.remove('hide');
         mealList.classList.remove('not-found');
     }else {
         html = "Sorry, we didn't find any meal!";
