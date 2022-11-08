@@ -7,7 +7,7 @@ const mealResult = document.querySelector('.meal-result h2');
 mealResult.classList.add('hide')
 const mealList = document.getElementById('meal');
 
-const loadMoreBtn = document.getElementById('load-more-btn');
+//const loadMoreBtn = document.getElementById('load-more-btn');
 
 export const generateMealList = (data) => {
     let html = '';
