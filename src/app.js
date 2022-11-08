@@ -2,7 +2,7 @@
 
 import { getMealList} from "./page/getMealList.js";
 import { getMealRecipe } from "./page/getMealRecipe.js";
-import { updateQuote } from "./page/updatequote.js";
+import { updateQuote } from "./page/updateQuote.js";
 
 
 const searchBtn =  document.getElementById('search-btn');
