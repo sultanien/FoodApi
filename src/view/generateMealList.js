@@ -13,7 +13,10 @@ const loadMoreBtn = document.getElementById('load-more-btn');
 
 export const generateMealList = (data) => {
     let html = '';
-    if(data.meals){
+    let lengthData = Object.values(data)[0].length
+    console.log(lengthData);
+    console.log(data.meals);
+    if(data.meals){    
         data.meals.forEach(meal => {
             html += `
             <div class = "meal-item" data-id = "${meal.idMeal}">
@@ -39,7 +42,9 @@ export const generateMealList = (data) => {
         html = "Sorry, we didn't find any meal!";
         mealList.classList.add('not-found');
     }
+    
     mealList.innerHTML = html;
+
 
     const mealItems = mealList.querySelectorAll('.meal-item')
     if (!mealItems || mealItems.length === 0) {
@@ -62,10 +67,4 @@ export const generateMealList = (data) => {
 
         mealCard.addEventListener('mouseover', backCardHandler);
     });
-    const mealItemsIncrease = 3;
-    const mealItemsCount = mealItems.length;
-    let currentPage = 1;
-    const pageCount = Math.ceil(mealItemsCount/mealItemsIncrease);
-
-    console.log(mealItemsCount)
 }
