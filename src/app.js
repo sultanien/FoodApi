@@ -29,6 +29,7 @@ input.addEventListener("keypress", function(event) {
 
 const loadApp = () => {
     updateQuote();
+    getMealList();
   };
   
 window.addEventListener('load', loadApp);
