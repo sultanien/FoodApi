@@ -12,6 +12,14 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 searchBtn.addEventListener('click', getMealList);
 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    searchBtn.click();
+  }
+});
+
+
 mealList.addEventListener('click', getMealRecipe);
 
 
