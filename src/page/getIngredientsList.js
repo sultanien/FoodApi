@@ -21,6 +21,5 @@ export async function getBackCard(id, backCardElement){
 
     backCardElement.appendChild(ingredientsListElement);
 
-    console.log('backCardElement', backCardElement);
 
 }

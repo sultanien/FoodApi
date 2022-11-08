@@ -6,6 +6,7 @@ import { updateQuote } from "./page/updateQuote.js";
 
 
 const searchBtn =  document.getElementById('search-btn');
+const input = document.getElementById('search-input') ;
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');

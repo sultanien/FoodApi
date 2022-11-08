@@ -10,9 +10,6 @@ const mealList = document.getElementById('meal');
 
 export const generateMealList = (data) => {
     let html = '';
-    let lengthData = Object.values(data)[0].length
-    console.log(lengthData);
-    console.log(data.meals);
     if(data.meals){    
         data.meals.forEach(meal => {
             html += `
