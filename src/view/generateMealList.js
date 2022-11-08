@@ -6,6 +6,7 @@ import { getBackCard } from "../page/getIngredientsList.js";
 const mealResult = document.querySelector('.meal-result h2');
 mealResult.classList.add('hide')
 const mealList = document.getElementById('meal');
+mealList.classList.add('hide')
 
 //const loadMoreBtn = document.getElementById('load-more-btn');
 
@@ -31,6 +32,7 @@ export const generateMealList = (data) => {
             </div>
             `
         });
+        mealList.classList.remove('hide')
         mealResult.classList.remove('hide');
         mealList.classList.remove('not-found');
     }else {
