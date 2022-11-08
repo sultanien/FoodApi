@@ -1,5 +1,3 @@
-'use strict'
-
 const mealDetailsContent = document.querySelector('.meal-details-content');
 
 export const mealRecipeModal = (meal) => {

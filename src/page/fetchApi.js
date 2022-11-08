@@ -1,5 +1,3 @@
-'use strict'
-
 export async function fetchApi(url){
     
     try{

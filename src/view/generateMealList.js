@@ -1,6 +1,3 @@
-
-"use strict";
-
 import { getBackCard } from "../page/getIngredientsList.js";
 
 const mealResult = document.querySelector('.meal-result h2');
@@ -34,6 +31,7 @@ export const generateMealList = (data) => {
         mealList.classList.remove('not-found');
     }else {
         html = "Sorry, we didn't find any meal!";
+        mealResult.classList.add('hide');
         mealList.classList.add('not-found');
     }
     
