@@ -10,7 +10,6 @@ const input = document.getElementById('search-input') ;
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
-const input = document.getElementById("search-input");
 
 searchBtn.addEventListener('click', getMealList);
 
