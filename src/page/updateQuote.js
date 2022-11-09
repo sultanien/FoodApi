@@ -1,3 +1,4 @@
+
 import { fetchApi } from "./fetchApi.js"
 
 const quote = document.querySelector("blockquote p");

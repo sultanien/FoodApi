@@ -5,6 +5,9 @@ mealResult.classList.add('hide')
 
 const mealList = document.getElementById('meal');
 
+//const loadMoreBtn = document.getElementById('load-more-btn');
+
+
 export const generateMealList = (data) => {
     let html = '';
     if(data.meals){    
@@ -27,6 +30,7 @@ export const generateMealList = (data) => {
             </div>
             `
         });
+        mealList.classList.remove('hide')
         mealResult.classList.remove('hide');
         mealList.classList.remove('not-found');
     }else {

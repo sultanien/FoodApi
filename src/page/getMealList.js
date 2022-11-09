@@ -13,4 +13,10 @@ export async function getMealList(){
             const mealResult = document.querySelector('.meal-result h2');
             mealResult.classList.add('hide')
     }
+    if(!searchInputTxt){
+        const reachedData = await fetchApi (`https://www.themealdb.com/api/json/v1/1/filter.php?i=egg`);
+        generateMealList(reachedData);
+        const mealResult = document.querySelector('.meal-result h2');
+        mealResult.classList.add('hide')
+    }
 }
