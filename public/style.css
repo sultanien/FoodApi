@@ -310,7 +310,7 @@ body{
 }
 
 .hide{
-    display: none;
+    display: none!important;
 }
 
 @media screen and (min-width:600px){

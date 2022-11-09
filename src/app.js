@@ -6,12 +6,21 @@ import { updateQuote } from "./page/updateQuote.js";
 
 
 const searchBtn =  document.getElementById('search-btn');
+const input = document.getElementById('search-input') ;
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 const input = document.getElementById("search-input");
 
 searchBtn.addEventListener('click', getMealList);
+
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    searchBtn.click();
+  }
+});
+
 
 mealList.addEventListener('click', getMealRecipe);
 
@@ -28,8 +37,8 @@ input.addEventListener("keypress", function(event) {
 });
 
 const loadApp = () => {
-    updateQuote();
     getMealList();
+    updateQuote();
   };
   
 window.addEventListener('load', loadApp);

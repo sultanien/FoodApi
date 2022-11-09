@@ -1,18 +1,16 @@
-
-"use strict";
-
 import { getBackCard } from "../page/getIngredientsList.js";
 
 const mealResult = document.querySelector('.meal-result h2');
 mealResult.classList.add('hide')
+
 const mealList = document.getElementById('meal');
-mealList.classList.add('hide')
 
 //const loadMoreBtn = document.getElementById('load-more-btn');
 
+
 export const generateMealList = (data) => {
     let html = '';
-    if(data.meals){
+    if(data.meals){    
         data.meals.forEach(meal => {
             html += `
             <div class = "meal-item" data-id = "${meal.idMeal}">
@@ -37,9 +35,12 @@ export const generateMealList = (data) => {
         mealList.classList.remove('not-found');
     }else {
         html = "Sorry, we didn't find any meal!";
+        mealResult.classList.add('hide');
         mealList.classList.add('not-found');
     }
+    
     mealList.innerHTML = html;
+
 
     const mealItems = mealList.querySelectorAll('.meal-item')
     if (!mealItems || mealItems.length === 0) {

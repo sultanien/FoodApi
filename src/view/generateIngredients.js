@@ -1,6 +1,3 @@
-'use strict'
-
-
 
 export const generateIngredients = (data) => {
 
